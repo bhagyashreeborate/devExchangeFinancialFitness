@@ -1,0 +1,131 @@
+/* ============ Dynamic Paddings and Margins ============ */
+@media (min-width: 1px){
+#savecontent{padding-top:20px; padding-bottom: 20px;}.margin-bottom{margin-bottom: 20px;}.margin-top{margin-top: 20px;}.negative-top-margin, .flush-with-nav{margin-top:-20px}
+.negative-bottom-margin{margin-bottom:-20px}.margin-top-bottom{margin-top: 20px; margin-bottom: 20px;}.padding-top{padding-top:20px;}.padding-bottom{padding-bottom:20px;}
+.padding-top-bottom, footer{padding-top: 20px; padding-bottom: 20px;}}
+@media (min-width: 440px){
+#savecontent{padding-top:25px; padding-bottom: 25px;}.margin-bottom{margin-bottom: 25px;}.margin-top{margin-top: 25px;}.negative-top-margin, .flush-with-nav{margin-top:-25px}
+.negative-bottom-margin{margin-bottom:-25px}.margin-top-bottom{margin-top: 25px; margin-bottom: 25px;}.padding-top{padding-top:25px;}.padding-bottom{padding-bottom:25px;}
+.padding-top-bottom, footer{padding-top: 25px; padding-bottom: 25px;}}
+@media (min-width: 768px){
+#savecontent{padding-top:30px; padding-bottom: 30px;}.margin-bottom{margin-bottom: 30px;}.margin-top{margin-top: 30px;}.negative-top-margin, .flush-with-nav{margin-top:-30px}
+.negative-bottom-margin{margin-bottom:-30px}.margin-top-bottom{margin-top: 30px; margin-bottom: 30px;}.padding-top{padding-top:30px;}.padding-bottom{padding-bottom:30px;}
+.padding-top-bottom, footer{padding-top: 30px; padding-bottom: 30px;}}
+@media (min-width: 992px){
+#savecontent{padding-top:35px; padding-bottom: 35px;}.margin-bottom{margin-bottom: 35px;}.margin-top{margin-top: 35px;}.negative-top-margin, .flush-with-nav{margin-top:-35px}
+.negative-bottom-margin{margin-bottom:-35px}.margin-top-bottom{margin-top: 35px; margin-bottom: 35px;}.padding-top{padding-top:35px;}.padding-bottom{padding-bottom:35px;}
+.padding-top-bottom, footer{padding-top: 35px; padding-bottom: 35px;}}
+@media (min-width: 1200px){
+#savecontent{padding-top:40px; padding-bottom: 40px;}.margin-bottom{margin-bottom: 40px;}.margin-top{margin-top: 40px;}.negative-top-margin, .flush-with-nav{margin-top:-40px}
+.negative-bottom-margin{margin-bottom:-40px}.margin-top-bottom{margin-top: 40px; margin-bottom: 40px;}.padding-top{padding-top:40px;}.padding-bottom{padding-bottom:40px;}
+.padding-top-bottom, footer{padding-top: 40px; padding-bottom: 40px;}}
+@media (min-width: 1580px){
+#savecontent{padding-top:45px; padding-bottom: 45px;}.margin-bottom{margin-bottom: 45px;}.margin-top{margin-top: 45px;}.negative-top-margin, .flush-with-nav{margin-top:-45px}
+.negative-bottom-margin{margin-bottom:-45px}.margin-top-bottom{margin-top: 45px; margin-bottom: 45px;}.padding-top{padding-top:45px;}.padding-bottom{padding-bottom:45px;}
+.padding-top-bottom, footer{padding-top: 45px; padding-bottom: 45px;}}
+
+.no-margins{margin-top:0;margin-bottom:0;}.no-top-margin{margin-top:0;}.no-bottom-margin{margin-bottom:0;}
+footer {margin-top: 0 !important;}
+
+@media (max-width: 399px){ /* CUSTOM IMAGE FLOATS ===================================== */
+	.float-left, .float-right {width: 100%; margin-bottom: 15px;}}
+@media (min-width: 400px){ /* CUSTOM IMAGE FLOATS ===================================== */
+	.float-left {width: 35%; float: left; margin: 0 20px 10px 0; margin-top: 3px; margin-bottom: -8px}
+	.float-right {float: right; margin: 0 0 10px 20px; margin-top: 14px;}}
+
+.hidden {display: none}
+
+/* ========================= BACKGROUND ========================= */
+  .bgg {
+  	 z-index: -2;
+  	 position: fixed;
+  	 width: 100%;
+  	 height: 120%;
+  	 background: url(./bg.jpg) no-repeat center bottom; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;}
+
+  .overlay-body {
+  	z-index: -1;
+  	position: absolute;
+  	width: 100%;
+  	height: 120%;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+}
+
+/* ========================= NAVBAR ========================= */
+nav {background-color: white;}
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6, nav p {color: black}
+
+
+/* ========================= FONTS ========================= */
+h1, h2, h3, h4, h5, h6 {font-family: Oswald; color: white}
+p, label {font-family: 'Open Sans'; color: white}
+
+.text-center {text-align: center}
+.uppercase {text-transform: uppercase}
+
+
+/* ========================= LINKS ========================= */
+a, a:hover, .btn, .btn:hover {cursor:pointer; -webkit-transition: all .2s ease; -moz-transition: all .2s ease; -o-transition: all .2s ease; transition: all .2s ease;}
+a {color: #FF4365}
+
+
+/* ========================= COLORS ========================= */
+.teal {color: #4b8670}
+.pink {color: #FF4365}
+.text-gradient {
+	background-image: -moz-gradient( linear, left top, right top, color-stop(0, #FF4365), color-stop(1, #00D9C0) );
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #FF4365), color-stop(1, #00D9C0) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #FF4365), color-stop(1, #00D9C0) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}=
+.bg-gradient {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff4365+0,00d9c0+100 */
+	background: #ff4365; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #ff4365 0%, #00d9c0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #ff4365 0%,#00d9c0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #ff4365 0%,#00d9c0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4365', endColorstr='#00d9c0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+/* ========================= FLEXBOX ========================= */
+.flex-sm, .flex-md {align-items: center;flex-wrap: wrap;margin: auto;}
+@media(min-width: 768px) {.flex-sm {display: flex}}
+@media(min-width: 992px) {.flex-md {display: flex}}
+
+
+/* ========================= BUTTONS ========================= */
+.btn-custom {color: white; border: 2px solid white; border-radius: 0}
+.btn-custom--teal:hover {border-color: white; background: rgba(75, 134, 112, 0.3)}
+.btn-custom--pink:hover {color: #FF4365 !important; border-color: #FF4365}
+
+.btn-custom--login {width: 250px;}
+.btn-custom--open {width: 250px;}
+.btn-custom--action {width: 300px}
+button {background: transparent !important;}
+button:hover {background: rgba(75, 134, 112, 0.3) !important}
+
+
+/* ========================= ICONS ========================= */
+.fa-inverse {color: #4b8670}
+
+
+/* ========================= FORMS ========================= */
+form {max-width: 600px; margin: auto}
+.form-group {margin-bottom: 5px}
+
+
+/*NEW STUFF*/
+#loginSpan {
+	color: white; 
+}
+a {
+    color: white;
+}
