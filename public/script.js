@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	//Initialize WOW js
 	new WOW().init();
-
 	jQuery('button').click( function(e) {
     	jQuery('.collapse').collapse('hide');
 	});
