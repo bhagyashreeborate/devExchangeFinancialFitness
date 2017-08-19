@@ -150,6 +150,16 @@ form {max-width: 600px; margin: auto}
 #log {background-color: transparent !important; border: none !important}
 
 
+/* ========================= MICROPHONE PAGE ========================= */
+.highchart {
+	min-width: 400px;
+	height: 500px;
+	max-width: 1000px;
+	margin: 0 auto
+}
+.highchart tspan {
+	font-size: 18px !important;
+}
 /*NEW STUFF*/
 #loginSpan {
 	color: white; 

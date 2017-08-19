@@ -2,42 +2,53 @@ $(document).ready(function() {
 	//Initialize WOW js
 	new WOW().init();
 
+	jQuery('button').click( function(e) {
+    	jQuery('.collapse').collapse('hide');
+	});
+
 	$('#signUp').click(function(){
     	alert('Congratulations! You have signed up for an account.');
 	});
 
-	$('#info-chart').highcharts({
-                    chart: {
-                      type: 'column'
-                    },
-                    title: {
-                      text: 'Sub Regions Network & System Availability'
-                    },
-                    xAxis: {
-                      categories: <%= raw((@regions).map { |x| x["sub_region"] }) %>
-                    },
-                    yAxis: {
-                      title: {
-                      }
-                    },
-                    series: [{
-                      name: 'System Avg',
-                      color: '#99ff33 ',
-                      data: <%= (@regions).map { |x| x["system"] }.inspect%>
-                    }, {
-                      name: 'Network Avg',
-                      data: <%= (@regions).map { |x| x["network"] }%>
-                    },
-                    {
-                      type: 'spline',
-                      name: 'Target',
-                      data: <%= (@regions).map { |x| x["target"] }.inspect%>,
-                      marker: {
-                        lineWidth: 2,
-                        lineColor: Highcharts.getOptions().colors[3],
-                        fillColor: 'white'
-                      }
-                    }]
-                  });
+	// Build the chart
+    Highcharts.chart('container', {
+
+    title: {
+        text: "Mom's Financial Goals"
+    },
+
+    xAxis: {
+        categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+    },
+
+    yAxis: {
+        title: {
+            text: '% Completion'
+        }
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    series: [{
+        name: 'Trip to Bahamas',
+        data: [5, 13, 24, 43, 65, 83]
+    }, {
+        name: 'Mommy Makeover',
+        data: [10, 20, 33, 46, 47, 51]
+    }, {
+        name: 'Spa Day',
+        data: [2, 4, 10, 17, 23, 27]
+    }, {
+        name: 'Student Loans',
+        data: [0, 17, 23, 30, 38, 41]
+    }, {
+        name: 'Pay Off Motorcycle',
+        data: [2, 4, 9, 14, 20, 22]
+    }]
+
+});
 
 });
