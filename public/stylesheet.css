@@ -137,7 +137,6 @@ form {max-width: 600px; margin: auto}
 	font-weight: 700;
 	padding: 3px 30px 2px 10px;
 	color: rgb(255, 255, 255);
-	background-color: rgba(25, 25, 25, 0.2);
 }
 .progress > .progress-completed {
 	position: absolute;

@@ -58,13 +58,52 @@
   					<i class="fa fa-circle fa-stack-2x"></i>
   					<i class="fa fa-gift fa-stack-1x fa-inverse"></i>
 				</span></h2>
-				<h2>Check Reward Balance</h2>
+				<h2>Check Progress</h2>
 				</button></span>
 			</div>
 		</div>
 
 		<div class="row margin-bottom">
 		<div class="collapse" id="goals">
+			<div class="col-sm-12 margin-bottom">
+				<h3 class="text-center">Create a Goal:</h3>
+				<form>
+  <div class="form-group row">
+    <label class="col-sm-4" for="inputFirst">Name of Goal:</label>
+    <div class="col-sm-8">
+    <input type="text" class="form-control" id="inputFirst" placeholder="Name of Goal">
+  </div>
+  </div>
+	<div class="form-group row">
+    <label class="col-sm-4" for="inputMiddle">Goal Amount:</label>
+    <div class="col-sm-8">
+    <input type="text" class="form-control" id="inputMiddle" placeholder="Goal Amount">
+  </div>
+  </div>
+  <div class="form-group row">
+    <label class="col-sm-4" for="inputLast">Rewards or Dollars?</label>
+    <div class="col-sm-8">
+    <div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    Rewards
+  </label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+    Dollars
+  </label>
+</div>
+  </div>
+  </div>
+  <div class="row text-center">
+  <div class="col-sm-12">
+  <h5><a href="/" class="btn btn-custom btn-lg btn-custom--teal uppercase"><i class="fa fa-check"></i>&nbsp;&nbsp;Create a Goal</a></h5>
+  </div>
+  </div>
+</form>
+			</div>
 			<div class="col-sm-12">
 				<div class="highchart wow fadeInUp" id="container"></div>
 			</div>
@@ -109,7 +148,7 @@
 			</div>
   				</div>
   				<div class="collapse" id="rewards">
-    				<h3 class="wow fadeIn">Rewards Progress:</h3>
+    				<h3 class="wow fadeIn">Family Rewards Progress:</h3>
     				<div class="col-sm-12">                   
         <div class="progress wow fadeInRight" data-wow-delay="0">
             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
