@@ -7,7 +7,7 @@
     "Paul Nicholls <paul.nicholls@canterbury.ac.nz>"
   ],
   "description": "Record MP3 files directly from the browser using JS and HTML",
-  "main": "js/recordmp3.js",
+  "main": "/mircophone/js/recordmp3.js",
   "keywords": [
     "audio"
   ],

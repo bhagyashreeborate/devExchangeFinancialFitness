@@ -1,0 +1,19 @@
+This folder contains a complete Python application.
+
+In order to run this project you need to have below applications / modules installed -
+
+	- Python 2.8 + version
+	- Boto
+	- Boto3 
+	- AWS account - access key, secret key
+	- DynamoDB
+
+This project has connection with DynamoDB AWS database. Hence, you should have a AWS account with AWS key and AWS secret key mentioned in the "config.py" file.
+
+
+- DevEx.py is the main configuration file which has all the routes mentioned.
+- /domain/User.py is used to get the data enterd into the HTML form.
+- /Infrastructure/infra.py is used to connect to the DynamoDB and perform database related operations.
+- /templates has all the html files and /microphone (Voice biometric) code.
+- /static has all the css, js files.
+- config.py has all the configuration to be made with AWS.

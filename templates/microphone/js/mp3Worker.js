@@ -1,4 +1,4 @@
-importScripts('libmp3lame.min.js');
+importScripts('/microphone/js/libmp3lame.min.js');
 
 var mp3codec;
 

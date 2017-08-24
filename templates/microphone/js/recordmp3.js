@@ -4,9 +4,9 @@
   var encoderWorker;
   
   var initWorker = function() {
-    WORKER_PATH = WORKER_PATH || global.workerPath + 'js/recorderWorker.js';
+    WORKER_PATH = WORKER_PATH || global.workerPath + '/microphone/js/recorderWorker.js';
     try {
-      encoderWorker = encoderWorker || new Worker(global.workerPath + 'js/mp3Worker.js');
+      encoderWorker = encoderWorker || new Worker(global.workerPath + '/microphone/js/mp3Worker.js');
     } catch (e) {
       console.warn("Web workers are not defined, recording will not work.", e);
     }

@@ -17,6 +17,6 @@
     "nusofthq <contact@nusofthq.com>",
     "Paul Nicholls <paul.nicholls@canterbury.ac.nz>"
   ],
-  "main": "js/recordmp3.js",
+  "main": "/microphone/js/recordmp3.js",
   "license": "MIT"
 }
